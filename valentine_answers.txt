@@ -1,0 +1,39 @@
+
+========================================
+Submitted: 2026-02-04 20:27:10.372061
+name: Jezreen
+age: 21
+coffee: Coffee
+sun: Sunset
+sweet: Sweet
+meals: Homemade
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-04 21:58:35.556713
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Beach
+q5: Night owl
+q6: Movies
+q7: Cats
+q8: Cozy
+q9: Calling
+q10: Planned
+q11: Winter
+q12: Pizza
+q13: City
+q14: Dancing
+q15: One movie
+q16: Night
+q17: Sneakers
+q18: TikTok
+q19: Adventure
+q20: Eating out
+q21: Gamer
+q22: Rose
+q23: Jollibee
+q24: Vanilla
+name: Jezreen
+valentine: YES ❤️
