@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template_string
 from datetime import datetime
-import os, json
+import os, json, math
 
 app = Flask(__name__)
 
@@ -16,7 +16,7 @@ def save_answers(data):
 STYLE = """
 <style>
 body{
- font-family:Arial, sans-serif;
+ font-family:Arial;
  background:linear-gradient(#ffe6ea,#fff0f5);
  display:flex;
  justify-content:center;
@@ -27,62 +27,41 @@ body{
  text-align:center;
  overflow:hidden;
 }
-
-h1{font-size:2.2rem;}
-h3{font-size:1.6rem;}
-p{font-size:1.3rem;}
-
 button{
  background:#ff4d6d;
  color:white;
- padding:18px 34px;
+ padding:14px 28px;
  border:none;
- border-radius:35px;
- font-size:1.3rem;
+ border-radius:30px;
+ font-size:18px;
  cursor:pointer;
- margin:12px;
+ margin:10px;
 }
-
 .question{display:none;}
 .question.active{display:block;}
-
 #secret{
  display:none;
  background:#fff0f5;
- padding:20px;
+ padding:18px;
  border-radius:18px;
  color:#ff1f4d;
- max-width:90%;
+ max-width:500px;
  margin:20px auto;
- font-size:1.2rem;
 }
-
 #bow{
  position:fixed;
  bottom:40px;
  left:50%;
  transform-origin:center bottom;
- font-size:70px;
+ font-size:72px;
 }
-
-.arrow{
- position:absolute;
- font-size:30px;
-}
-
+.arrow{position:absolute;font-size:26px;}
 .heart{
  position:absolute;
- font-size:28px;
+ font-size:30px;
  animation:float 8s linear infinite;
- opacity:0.7;
+ opacity:0.6;
 }
-
-.heart.hit{
- animation:none;
- transform:scale(1.6);
- filter:drop-shadow(0 0 15px hotpink);
-}
-
 @keyframes float{
  from{bottom:-40px;}
  to{bottom:110%;}
@@ -99,14 +78,16 @@ MUSIC = """
 function startMusic(){
  localStorage.setItem("music","on");
  var a=document.getElementById("bgm");
- if(a){a.volume=0.6; a.play();}
+ a.volume=0.6;
+ a.play();
 }
-window.onload=function(){
+window.addEventListener("load",function(){
  var a=document.getElementById("bgm");
- if(a && localStorage.getItem("music")==="on"){
-  a.volume=0.6; a.play();
+ if(localStorage.getItem("music")==="on"){
+  a.volume=0.6;
+  a.play();
  }
-}
+});
 </script>
 """
 
@@ -121,7 +102,7 @@ setInterval(function(){
  h.style.animationDuration=(5+Math.random()*5)+"s";
  document.body.appendChild(h);
  setTimeout(function(){h.remove();},9000);
-},900);
+},800);
 </script>
 """
 
@@ -189,20 +170,20 @@ var angle=0, hit=0;
 function aim(x,y){
  var bow=document.getElementById("bow");
  var dx=x-window.innerWidth/2;
- var dy=window.innerHeight-y-60;
+ var dy=window.innerHeight-y-40;
  angle=Math.atan2(dx,dy);
- bow.style.transform="translateX(-50%) rotate("+angle*180/Math.PI+"deg)";
+ bow.style.transform="translateX(-50%) rotate("+ (angle*180/Math.PI) +"deg)";
 }
 
 function shoot(){
  var arrow=document.createElement("div");
  arrow.className="arrow";
  arrow.innerHTML="➵";
- var x=window.innerWidth/2, y=120;
+ var x=window.innerWidth/2, y=90;
  document.body.appendChild(arrow);
 
- var vx=Math.sin(angle)*14;
- var vy=Math.cos(angle)*14;
+ var vx=Math.sin(angle)*12;
+ var vy=Math.cos(angle)*12;
 
  var fly=setInterval(function(){
   x+=vx; y+=vy;
@@ -211,13 +192,9 @@ function shoot(){
 
   document.querySelectorAll(".heart").forEach(function(h){
    var r=h.getBoundingClientRect();
-   if(Math.abs(r.left+r.width/2-x)<25){
-    h.classList.add("hit");
-    setTimeout(function(){h.remove();},150);
-    arrow.remove();
-    clearInterval(fly);
-    hit++;
-    if(hit>=3){document.getElementById("go").submit();}
+   if(Math.abs(r.left+r.width/2-x)<20){
+    h.remove(); arrow.remove(); clearInterval(fly);
+    hit++; if(hit>=3){document.getElementById("go").submit();}
    }
   });
  },20);
@@ -233,14 +210,10 @@ function spawn(){
 }
 
 window.onload=function(){
- for(var i=0;i<6;i++)spawn();
+ for(var i=0;i<5;i++){spawn();}
  setInterval(spawn,1200);
  document.addEventListener("mousemove",function(e){aim(e.clientX,e.clientY);});
  document.addEventListener("mouseup",shoot);
- document.addEventListener("touchmove",function(e){
-  aim(e.touches[0].clientX,e.touches[0].clientY);
- });
- document.addEventListener("touchend",shoot);
 };
 </script>
 </head>
@@ -296,7 +269,7 @@ function next(name,value){
 </head>
 <body>
 """ + MUSIC + """
-<h1>Hello pretty lady, Jaja 💕</h1>
+<h1>Hello Pretty lady, Jaja 💕</h1>
 <div id="secret"></div>
 <form id="surveyForm" method="post" action="/valentine">
 """ + "".join([f'<input type="hidden" name="q{i}">' for i in range(1,25)]) + """
@@ -336,10 +309,10 @@ RESULT = """
 <!DOCTYPE html><html><head><title>For You</title>""" + STYLE + """</head>
 <body>
 <h1>Thank you, Jaja 💕</h1>
-<p>
+<p style="max-width:600px;font-size:18px;">
 I didn’t make this just for fun.<br><br>
 I made this because I want to be with you forever —<br>
-Your personality, your vibe— and honestly, everything about you.<br><br>
+Your personality, your vibe — and honestly, everything about you.<br><br>
 No pressure, no rush.<br>
 I just wanted you to know 💖
 </p>
