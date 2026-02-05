@@ -339,7 +339,7 @@ RESULT = """
 <p>
 I didn’t make this just for fun.<br><br>
 I made this because I want to be with you forever —<br>
-Your personality, your vibe — and honestly, everything about you.<br><br>
+Your personality, your vibe— and honestly, everything about you.<br><br>
 No pressure, no rush.<br>
 I just wanted you to know 💖
 </p>
