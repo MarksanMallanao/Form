@@ -37,3 +37,253 @@ q23: Jollibee
 q24: Vanilla
 name: Jezreen
 valentine: YES ❤️
+
+==================================================
+Submitted: 2026-02-05 07:29:38.118995
+name: Jezreen
+age: 21
+Coffee or Tea?: Coffee
+valentine: NO 😅
+
+==================================================
+Submitted: 2026-02-05 07:48:07.097164
+name: Jezreen
+age: 21
+Coffee or Tea?: Coffee
+Sunrise or Sunset?: Sunrise
+Sweet or Savory?: Sweet
+Pizza or Burger?: Pizza
+Gamer or Sporty?: Gamer
+Rose or Sunflower?: Rose
+McDo or Jollibee?: McDo
+Cookies & Cream or Vanilla?: Cookies & Cream
+valentine: YES ❤️
+
+==================================================
+Submitted: 2026-02-05 07:55:36.121302
+q1: Coffee
+q2: Sunrise
+q3: Sweet
+q4: Beach
+q5: Early bird
+q6: Books
+q7: Cats
+q8: Dressing up
+q9: Texting
+q10: Spontaneous
+q11: Summer
+q12: Pizza
+q13: City
+q14: Singing
+q15: Binge
+q16: Morning
+q17: Heels
+q18: Instagram
+q19: Adventure
+q20: Homemade
+q21: Gamer
+q22: Rose
+q23: McDo
+q24: Cookies & Cream
+name: Jezreen
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 08:54:24.592674
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Beach
+q5: Early bird
+q6: Books
+q7: Cats
+q8: Dressing up
+q9: Texting
+q10: Spontaneous
+q11: Summer
+q12: Pizza
+q13: City
+q14: Singing
+q15: Binge
+q16: Morning
+q17: Heels
+q18: Instagram
+q19: Adventure
+q20: Homemade
+q21: Gamer
+q22: Rose
+q23: McDo
+q24: Cookies & Cream
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 09:08:43.068451
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Mountain
+q5: Early bird
+q6: Movies
+q7: Cats
+q8: Cozy
+q9: Texting
+q10: Planned
+q11: Summer
+q12: Burger
+q13: City
+q14: Dancing
+q15: Binge
+q16: Night
+q17: Heels
+q18: TikTok
+q19: Adventure
+q20: Eating out
+q21: Sporty
+q22: Sunflower
+q23: McDo
+q24: Vanilla
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 09:22:42.676378
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 09:23:25.752446
+q1: Coffee
+q2: Sunrise
+q3: Sweet
+q4: Beach
+q5: Early bird
+q6: Books
+q7: Cats
+q8: Dressing up
+q9: Texting
+q10: Spontaneous
+q11: Summer
+q12: Pizza
+q13: City
+q14: Singing
+q15: Binge
+q16: Morning
+q17: Heels
+q18: Instagram
+q19: Adventure
+q20: Homemade
+q21: Gamer
+q22: Rose
+q23: McDo
+q24: Cookies & Cream
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 09:29:40.726243
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Mountain
+q5: Early bird
+q6: Movies
+q7: Cats
+q8: Dressing up
+q9: Texting
+q10: Spontaneous
+q11: Summer
+q12: Pizza
+q13: City
+q14: Singing
+q15: Binge
+q16: Morning
+q17: Heels
+q18: Instagram
+q19: Adventure
+q20: Homemade
+q21: Gamer
+q22: Rose
+q23: McDo
+q24: Cookies & Cream
+valentine: YES ❤️
+
+========================================
+Submitted: 2026-02-05 09:39:59.302368
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Mountain
+q5: Early bird
+q6: Movies
+q7: Cats
+q8: Cozy
+q9: Texting
+q10: Planned
+q11: Summer
+q12: Burger
+q13: City
+q14: Dancing
+q15: Binge
+q16: Night
+q17: Heels
+q18: TikTok
+q19: Adventure
+q20: Eating out
+q21: Gamer
+q22: Sunflower
+q23: Jollibee
+q24: Vanilla
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 09:44:10.229931
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Mountain
+q5: Early bird
+q6: Books
+q7: Cats
+q8: Dressing up
+q9: Texting
+q10: Spontaneous
+q11: Summer
+q12: Pizza
+q13: City
+q14: Singing
+q15: Binge
+q16: Morning
+q17: Heels
+q18: Instagram
+q19: Adventure
+q20: Homemade
+q21: Gamer
+q22: Rose
+q23: McDo
+q24: Cookies & Cream
+valentine: YES ❤️
+
+=============================================
+Submitted: 2026-02-05 09:47:19.336036
+q1: Coffee
+q2: Sunset
+q3: Sweet
+q4: Mountain
+q5: Early bird
+q6: Movies
+q7: Cats
+q8: Dressing up
+q9: Texting
+q10: Spontaneous
+q11: Summer
+q12: Pizza
+q13: City
+q14: Singing
+q15: Binge
+q16: Morning
+q17: Heels
+q18: Instagram
+q19: Adventure
+q20: Homemade
+q21: Gamer
+q22: Rose
+q23: McDo
+q24: Cookies & Cream
+valentine: YES ❤️
